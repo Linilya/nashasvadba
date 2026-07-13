@@ -1452,11 +1452,11 @@ body{
     text-align:center;
     line-height:1.1;
 }
-.music-player{
-    position:fixed;
-    right:22px;
-    bottom:22px;
-    z-index:9999;
+.music-player {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 9999;
 }
 
 #musicBtn {
@@ -1479,14 +1479,14 @@ body{
     transform: scale(1.08);
 }
 
-#musicBtn.playing {
-    animation: spin 5s linear infinite;
-}
-
 #musicBtn img {
     width: 32px;
     height: 32px;
     display: block;
+}
+
+#musicBtn.playing img {
+    animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
