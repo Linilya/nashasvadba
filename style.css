@@ -2104,14 +2104,12 @@ body{
     transform:translateY(-3px);
 
     background:#5a3e30;
-
-}
-
 .guestGreeting{
 
-    margin-bottom:35px;
+    margin-top:50px;      /* регулируй это число */
+    margin-bottom:20px;
 
-    font-family:"Cormorant Garamond",serif;
+    font-family:"Cormorant Garamond", serif;
 
     font-size:64px;
 
