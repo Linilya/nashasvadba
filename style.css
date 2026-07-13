@@ -2184,3 +2184,170 @@ body{
     }
 
 }
+/*==========================
+      DESKTOP HERO
+===========================*/
+
+.desktop-name{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin:70px auto 45px;
+
+}
+
+.arc{
+
+    display:flex;
+
+    gap:18px;
+
+}
+
+.arc-top{
+
+    transform:translateY(18px);
+
+}
+
+.arc-top .tile:nth-child(1){
+
+    transform:translateY(40px) rotate(-18deg);
+
+}
+
+.arc-top .tile:nth-child(2){
+
+    transform:translateY(12px) rotate(-8deg);
+
+}
+
+.arc-top .tile:nth-child(3){
+
+    transform:translateY(12px) rotate(8deg);
+
+}
+
+.arc-top .tile:nth-child(4){
+
+    transform:translateY(40px) rotate(18deg);
+
+}
+
+.arc-bottom{
+
+    transform:translateY(-18px);
+
+}
+
+.arc-bottom .tile:nth-child(1){
+
+    transform:translateY(-40px) rotate(18deg);
+
+}
+
+.arc-bottom .tile:nth-child(2){
+
+    transform:translateY(-12px) rotate(8deg);
+
+}
+
+.arc-bottom .tile:nth-child(3){
+
+    transform:translateY(-12px) rotate(-8deg);
+
+}
+
+.arc-bottom .tile:nth-child(4){
+
+    transform:translateY(-40px) rotate(-18deg);
+
+}
+
+.ampersand{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:95px;
+
+    color:#7d5b4c;
+
+    line-height:1;
+
+    animation:floatAmp 5s ease-in-out infinite;
+
+}
+
+.desktop-name .tile{
+
+    transition:.45s;
+
+    box-shadow:
+
+        0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.desktop-name .tile:hover{
+
+    transform:translateY(-10px) scale(1.08);
+
+}
+
+@keyframes floatAmp{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+}
+
+@media(max-width:900px){
+
+    .desktop-name{
+
+        margin:30px auto;
+
+    }
+
+    .arc{
+
+        gap:10px;
+
+    }
+
+    .arc-top,
+
+    .arc-bottom{
+
+        transform:none;
+
+    }
+
+    .arc .tile{
+
+        transform:none!important;
+
+    }
+
+    .ampersand{
+
+        font-size:60px;
+
+    }
+
+}
