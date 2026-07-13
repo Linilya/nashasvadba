@@ -1452,48 +1452,46 @@ body{
     text-align:center;
     line-height:1.1;
 }
-.music-player {
+/* ==========================
+      Музыкальный плеер
+========================== */
+
+.music-player{
     position: fixed;
-    right: 22px;
-    bottom: 22px;
+    right: 25px;
+    bottom: 25px;
     z-index: 9999;
 }
 
-#musicBtn {
-    width: 58px;
-    height: 58px;
+#musicBtn{
+    width: 62px;
+    height: 62px;
     border: none;
     border-radius: 50%;
     background: rgba(255,255,255,.85);
     backdrop-filter: blur(10px);
+
+    font-size: 28px;
     cursor: pointer;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     box-shadow: 0 10px 30px rgba(0,0,0,.15);
-    transition: .3s;
+
+    transition: .3s ease;
 }
 
-#musicBtn:hover {
+#musicBtn:hover{
     transform: scale(1.08);
 }
 
-#musicBtn img {
-    width: 32px;
-    height: 32px;
-    display: block;
+#musicBtn.playing{
+    animation: musicSpin 6s linear infinite;
 }
 
-#musicBtn.playing img {
-    animation: spin 5s linear infinite;
-}
-
-@keyframes spin {
-    from {
+@keyframes musicSpin{
+    from{
         transform: rotate(0deg);
     }
-    to {
+    to{
         transform: rotate(360deg);
     }
 }
