@@ -1532,3 +1532,29 @@ body{
         transform: rotate(360deg);
     }
 }
+.music-player{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    z-index:9999;
+}
+
+#musicBtn{
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.8);
+    backdrop-filter:blur(10px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+#musicBtn img{
+    width:26px;
+    height:26px;
+    display:block;
+}
