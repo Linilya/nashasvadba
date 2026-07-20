@@ -1499,27 +1499,28 @@ body{
 }
 
 #musicBtn{
-    width: 62px;
-    height: 62px;
-    border: none;
-    border-radius: 50%;
-    background: rgba(255,255,255,.85);
-    backdrop-filter: blur(10px);
-
-    font-size: 28px;
-    cursor: pointer;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,.15);
-
-    transition: .3s ease;
+    width:58px;
+    height:58px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:.3s;
 }
 
 #musicBtn:hover{
-    transform: scale(1.08);
+    transform:scale(1.08);
 }
 
-#musicBtn.playing{
-    animation: musicSpin 6s linear infinite;
+#musicBtn img{
+    width:24px;
+    height:24px;
+    opacity:.75;
 }
 
 @keyframes musicSpin{
