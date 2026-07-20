@@ -1558,3 +1558,15 @@ body{
     height:26px;
     display:block;
 }
+#musicBtn.playing img{
+    animation: musicSpin 3s linear infinite;
+}
+
+@keyframes musicSpin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
