@@ -147,5 +147,23 @@ guestInput.addEventListener("keydown", function(e){
 });
 const music = document.getElementById("bgMusic");
 const musicBtn = document.getElementById("musicBtn");
+let isPlaying = false;
 
+musicBtn.addEventListener("click", () => {
+
+    if (!isPlaying) {
+
+        music.play();
+        isPlaying = true;
+        musicBtn.classList.add("playing");
+
+    } else {
+
+        music.pause();
+        isPlaying = false;
+        musicBtn.classList.remove("playing");
+
+    }
+
+});
 
